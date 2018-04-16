@@ -1,0 +1,177 @@
+/*--------------------------------------------------------------
+# Normalizes
+--------------------------------------------------------------*/
+html {
+    display: block;
+    height: 100%;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*{-webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+.hide-me{
+	display: none;
+}
+
+.fechas, .schedule {
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.fechas li, .schedule li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 16px;
+}
+.fechas li a, .schedule li a {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.fechas li a:active, .fechas li a:focus, .schedule li a:active, .schedule li a:focus {
+  text-decoration: none;
+}
+.fechas li a.active , .schedule li a.active {
+  background: #009999;
+  color: #fff !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+  .fechas li, .schedule li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+.schedule-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.schedule-content.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.program {
+  margin-bottom: 4em;
+}
+.program img {
+  color: red;
+  width: 70px;
+  margin-bottom: 20px;
+}
+.program h3 {
+  font-size: 20px;
+}
+.program.program-schedule {
+  margin-bottom: 2em;
+  padding: 30px 10px;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.8;
+    font-size: 16px;
+}
+.program.program-schedule img {
+  width: 40px !important;
+}
+
+.program.program-schedule h3 {
+  margin-bottom: 0;
+
+}
+.program.program-schedule small {
+  display: block;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.1;
+  margin: 0px 0px 5px 0px;
+  min-height: 100%;
+
+}
+.program.program-schedule span {
+  margin: 7px 0px 0px 0px;
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+line-height: 1.1;
+}
+.program.program-schedule:hover, .program.program-schedule:focus {
+  -webkit-box-shadow: 0px 6px 55px -23px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 6px 55px -23px rgba(0, 0, 0, 0.72);
+  box-shadow: 0px 6px 55px -23px rgba(0, 0, 0, 0.72);
+}
+
+.lightGrey {
+background-color:rgba(0, 0, 0, 0.04);
+
+}
+
+.profes_container {
+  margin-bottom: 2em;
+  padding: 20px 0px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 1;
+}
+
+
+
+.profes i {
+color:#009999;
+}
+
+.profes {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.profes img {
+width:140px;
+height:140px;
+border-radius:120px;
+filter:grayscale(100%);
+margin-bottom:20px;
+transition: 0.5s;
+
+}
+
+.profes img:hover {
+filter:grayscale(0%);
+transition: 0.5s;
+
+}
+
+#logo-hor {
+  max-height: 250px ;
+}
